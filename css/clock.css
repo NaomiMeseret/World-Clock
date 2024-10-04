@@ -1,13 +1,14 @@
 body{
-    background-color: #f9f7fe;
-    font-family: sans-serif;
+   background: linear-gradient(to right, #e0b0ff, #fcd1d1);
+   font-family: sans-serif;
 }
 .container{
     max-width: 600px;
     margin: 40px auto;
-    background: white;
+    background: #ffffff;
     padding: 30px;
-    box-shadow: rgba(100,100,111,0.2)0px 7px 29px 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #f0f0f0;
     border-radius: 10px;
 }
 h1{
