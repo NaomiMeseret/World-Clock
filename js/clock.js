@@ -21,7 +21,7 @@ function updateTime() {
   }
 }
 updateTime();
-setInterval(updateTime, 1000);
+setInterval(updateTime,1000);
 function updateCity(event){
   let cityTimeZone=event.target.value
   if(cityTimeZone==="Current"){
@@ -40,4 +40,7 @@ function updateCity(event){
       </div>`;
 }
 let citiesSelectElement=document.querySelector("#city")
-citiesSelectElement.addEventListener("change",updateCity)
+citiesSelectElement.addEventListener("change",function(event){
+    updateCity(event);
+    setInterval(() => updateCity(event), 1000);
+});
